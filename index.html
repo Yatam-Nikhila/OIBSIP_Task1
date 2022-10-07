@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing page</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"> 
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Amazing Food</a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="menu">
+                <li> <a href="#home">HOME</a> </li>
+                <li> <a href="#about">ABOUT</a> </li>
+                <li> <a href="#technical">SERVICES</a> </li>
+                <li> <a href="#projects">CONTACT US</a> </li>
+            </ul>
+        </header>
+        <section class="banner" id="home">
+            <div class="textBx">
+                <h2><span> DELICIOUS FOOD</span></h2>
+                <h3>For Healthy life</h3>
+                <a href="#about" class="btn">View schedule</a>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="heading">
+                <h2></h2>
+                <br>
+            </div>
+            <div class="content">
+                <div class="heading white">
+                    <h2>SCHEDULE</h2>
+                    <br>
+                </div>
+                <div class="contentBx w50">
+                    <p><b>Nationwide service network with growing presence abroad<br>
+                          Assured availability - anytime, anywhere 24/7</b></p><br>
+                    <p><i>80+ Years of heritage With top notch Quality credentials-Assured consistency on taste, aroma & quality</i></p><br>
+                    <p><i>Innovative solutions to make customers more efficient-5-50% cost control & improved resource utilization</i></p><br>
+                    <p><i>Widest range of versatile F&B product solutions-One stop shop to meet your F&B needs</i></p><br>
+                    <p><i>Strong development set-up and expert in-house team-Continuous in-kitchen support on menu expansion, demos, etc</i></p>
+                </div>
+                <div class="w50">
+                    <img src="food.jpg" class="img">
+                </div>
+            </div>
+            
+        </section>
+        <section class="technical" id="technical">
+            <div class="heading white">
+                <h2>SERVICES</h2>
+                <br>
+                <p>Providing continuous in-kitchen support to customers</p>
+                <p>We not only have great products, we also offer value-added services to help you attract customers and serve the best they deserve.</p>
+            </div>
+            <div class="content">
+                <div class="technicalBx">
+                    <img src="m2.png">
+                    <br><br>
+                    <h2>IN KITCHEN TRAINING AND DEMO</h2>
+                    
+                </div>
+                <div class="technicalBx">
+                    <img src="m1.png">
+                    <br><br>
+                    <h2>BUILD FOOD AND BEVERAGE MENU</h2>
+                    <br>
+                </div>
+                <div class="technicalBx">
+                    <img src="m3.png">
+                    <br><br>
+                    <h2>STANDARDISE RECIPE</h2>
+                    <br>
+                </div>
+                
+        </section>
+        <section class="projects" id="projects">
+            <div class="heading">
+                <h2>CONTACT US</h2>
+                <br>
+                <p><i>abc@gmail.com</i></p>
+            </div><b><center>
+            <p><i>8764350921</i><br><br>
+
+                
+            </center>
+            <div class="heading">
+               <a href="#" class="btn">View more</a>
+            </div>
+        </section>
+        
+        <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+            var header = document.querySelector('header');
+            header.classList.toggle("sticky",window.scrollY > 0);
+        });
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            menuToggle.classList.toggle('active');
+        }
+        </script>
+    </body>
+</html>
